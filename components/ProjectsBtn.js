@@ -1,5 +1,6 @@
 // next image
 import Image from "next/image";
+import roundedText from "../public/rounded-text.png";
 
 // next link
 import Link from "next/link";
@@ -15,11 +16,9 @@ const ProjectsBtn = () => {
         className="relative w-[185px] h-[185px] flex justify-center items-center bg-circleStar bg-cover bg-center bg-no-repeat group"
       >
         <Image
-          src={"/rounded-text.png"}
-          width={141}
-          height={148}
+          src={roundedText}
           alt=""
-          className="animate-spin-slow w-full h-full max-w-[141px] max-h-[148px]"
+          className="animate-spin-slow w-[300px] h-[300px] max-w-[450px] max-h-[450px]"
         />
         <HiArrowRight className="absolute text-4xl group-hover:translate-x-2 transition-all duration-300" />
       </Link>

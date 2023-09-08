@@ -1,0 +1,16 @@
+.textContainer {
+  padding-top: 5em;
+}
+.subtext {
+  text-align: justify;
+}
+@media (min-width: 768px) {
+  .textContainer {
+    padding-top: 0;
+  }
+}
+@media (min-width: 1280px) {
+  .subtext {
+    padding: 0em 10em 0 0;
+  }
+}
