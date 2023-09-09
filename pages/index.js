@@ -11,8 +11,11 @@ import { motion } from "framer-motion";
 
 // variants
 import { fadeIn } from "../variants";
+//translations
+import { useTranslation } from "react-i18next";
 
 const Home = () => {
+  const { t } = useTranslation();
   return (
     <div className="bg-primary/10 py-32 text-center xl:text-left ">
       {/* text */}
@@ -29,9 +32,9 @@ const Home = () => {
             className="h1"
           >
             Carl Stricker <br />
-            <span className="text-accent">
-              Ihr Pokémon <br /> Fachmann
-            </span>
+            <span className="text-accent">{t("index.greeting1")}</span>
+            <br />
+            <span className="text-accent">{t("index.greeting2")}</span>
           </motion.h1>
           {/* subtitle */}
           <motion.p

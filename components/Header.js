@@ -7,6 +7,10 @@ import Link from "next/link";
 // components
 import Socials from "../components/Socials";
 
+import LanguageSelector from "./LanguageSelector/LanguageSelector";
+
+import css from "./header.module.css";
+
 const Header = () => {
   return (
     <header className="absolute z-30 w-full flex items-center px-16 xl:px-0 xl:h-[90px]">
@@ -22,6 +26,10 @@ const Header = () => {
               priority={true}
             />
           </Link>
+          <div className={css.socialsLanguageContainer}>
+            <LanguageSelector />
+          </div>
+
           {/* socials */}
           <Socials />
         </div>

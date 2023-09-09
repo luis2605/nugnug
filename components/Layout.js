@@ -14,10 +14,17 @@ const Layout = ({ children }) => {
   return (
     <div
       className={`page bg-site text-white bg-cover bg-no-repeat ${sora.variable} font-sora relative`}
-      style={{ overflowY: "scroll", height: "100vh" }}
+      style={{
+        overflowY: "scroll",
+        height: "120vh",
+        scrollBehavior: "smooth", // Apply smooth scrolling here
+      }}
     >
       <TopLeftImg />
-      <Nav style={{ position: "sticky", top: 0, zIndex: 1000 }} />
+      <Nav
+        className="bg-blue-500 text-white py-4 px-8"
+        style={{ position: "sticky", top: 0, zIndex: 1000 }}
+      />
       <Header style={{ position: "sticky", top: 0, zIndex: 1000 }} />
       <div
         className="z-0" // Lower z-index for the children

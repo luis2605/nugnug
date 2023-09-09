@@ -1,0 +1,17 @@
+.socialsLanguageContainer {
+  position: relative;
+  top: -0.85em;
+  right: 7.5em;
+}
+@media (min-width: 1024px) {
+  .socialsLanguageContainer {
+    top: -2.85em;
+    right: -12.5em;
+  }
+}
+@media (min-width: 1280px) {
+  .socialsLanguageContainer {
+    top: -2.9em;
+    right: -22.5em;
+  }
+}
